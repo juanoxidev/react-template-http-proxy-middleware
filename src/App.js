@@ -6,7 +6,7 @@ function App() {
 
   const [list, setList] = useState([]);
   useEffect(() => {
-    axios.get("./personas")
+    axios.get("./api/personas")
       .then((response) => {
         setList(response.data);
         console.log(response.data)
